@@ -57,7 +57,7 @@ export default function Home() {
             type="text"
             name="upiHandle"
             onChange={handleChange}
-            placeholder="unrivalledking@apl"
+            placeholder="example@upi"
             value={formData.upiHandle}
             className="p-2 border border-gray-300 rounded w-full"
           />
