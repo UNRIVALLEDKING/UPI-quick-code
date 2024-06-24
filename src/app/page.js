@@ -38,13 +38,26 @@ export default function Home() {
       upiHandleRegex.test(upiHandle) && amountValue > 0 && amountValue <= 100000
     );
   };
+  // const handleDownload = () => {
+  //   html2canvas(qrContainerRef.current).then((canvas) => {
+  //     const link = document.createElement('a');
+  //     link.download = 'qr-code.png';
+  //     link.href = canvas.toDataURL('image/png');
+  //     link.click();
+  //   });
+  // };
   const handleDownload = () => {
-    html2canvas(qrContainerRef.current).then((canvas) => {
-      const link = document.createElement('a');
-      link.download = 'qr-code.png';
-      link.href = canvas.toDataURL('image/png');
-      link.click();
-    });
+    // Ensure QR code is fully rendered before capturing
+    setTimeout(() => {
+      html2canvas(qrContainerRef.current, { scrollY: -window.scrollY }).then(
+        (canvas) => {
+          const link = document.createElement('a');
+          link.download = 'qr-code.png';
+          link.href = canvas.toDataURL('image/png');
+          link.click();
+        }
+      );
+    }, 500); // Delay to ensure QR code is fully rendered
   };
 
   return (
@@ -114,7 +127,7 @@ const QRCodeDisplay = ({ upiString }) => {
   }, [upiString]);
 
   return (
-    <div className="border border-black p-3 rounded-xl bg-white">
+    <div className="qr-container border border-black p-3 rounded-xl bg-white">
       {upiString ? (
         <canvas ref={qrRef} />
       ) : (
