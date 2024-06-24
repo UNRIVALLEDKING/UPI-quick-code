@@ -19,7 +19,8 @@ Welcome to **UPI Quick Code**, the ultimate tool for generating UPI QR codes eff
 
 ## Screenshots
 
-![UPI Quick Code Screenshot](#)
+![UPI Quick Code Screenshot](https://raw.githubusercontent.com/UNRIVALLEDKING/UPI-quick-code/master/screenshots/screenshot1.png)
+![UPI Quick Code Screenshot](https://raw.githubusercontent.com/UNRIVALLEDKING/UPI-quick-code/master/screenshots/screenshot2.png)
 
 ## Installation
 
