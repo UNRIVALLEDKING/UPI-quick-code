@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# UPI Quick Code
 
-## Getting Started
+<div align="center">
+  <img src="https://raw.githubusercontent.com/UNRIVALLEDKING/UPI-quick-code/master/src/assets/logo.png" width="250" alt="UPI Quick Code Logo">
+</div>
 
-First, run the development server:
+Welcome to **UPI Quick Code**, the ultimate tool for generating UPI QR codes effortlessly! Developed by **UNRIVALLLEDKING**, this single-page application allows you to quickly create UPI QR codes for seamless payments. Whether you're a business owner or an individual, our generator makes it easy to receive payments directly to your UPI handle.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Easy UPI QR Code Generation:** Simply enter your UPI handle and amount to generate a QR code instantly.
+- **Real-Time Validation:** Ensures the UPI handle is correctly formatted and the transaction amount is within the allowed limit (0 to 1 lakh INR).
+- **Downloadable QR Code:** Download the generated QR code with a single click for easy sharing and printing.
+- **Mobile-Friendly Design:** Optimized for all devices, ensuring a smooth experience whether you're on a desktop or mobile.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[Link to live demo](#)
 
-## Learn More
+## Screenshots
 
-To learn more about Next.js, take a look at the following resources:
+![UPI Quick Code Screenshot](#)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To get a local copy up and running, follow these simple steps.
 
-## Deploy on Vercel
+### Prerequisites
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Node.js
+- npm
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Installation Steps
+
+1. **Clone the repo**
+
+   ```sh
+   git clone https://github.com/UNRIVALLLEDKING/upi-quick-code.git
+   ```
+
+2. **Navigate to the project directory**
+
+   ```sh
+   cd upi-quick-code
+   ```
+
+3. **Install NPM packages**
+
+   ```sh
+   npm install
+   ```
+
+4. **Run the development server**
+
+   ```sh
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Usage
+
+1. **Enter Your UPI Id**: Input your UPI handle (e.g., `example@upi`).
+2. **Enter Amount**: Specify the amount to be paid (0 to 1,00,000 INR).
+3. **Generated QR Code**: The QR code will be automatically generated and displayed as you input the data.
+4. **Download QR Code**: Click on the "Download QR" button to download the generated QR code.
+
+## Contributing
+
+Contributions are what make the open-source community such an amazing place to be, learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## Contact
+
+**UNRIVALLLEDKING**
+
+- [GitHub](https://github.com/UNRIVALLLEDKING)
+- [Linkedin](https://www.linkedin.com/in/unrivalledking/)
+- [Linktree](https://linktr.ee/unrivalledking)
+
+## Acknowledgements
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [QRious](https://github.com/neocotic/qrious)
+- [html2canvas](https://html2canvas.hertzen.com/)
