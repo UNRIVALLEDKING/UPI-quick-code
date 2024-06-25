@@ -114,7 +114,7 @@ const QRCodeDisplay = ({ upiString }) => {
   }, [upiString]);
 
   return (
-    <div className="border border-black p-3 rounded-xl bg-white">
+    <div className="qr-container border border-black p-3 rounded-xl bg-white">
       {upiString ? (
         <canvas ref={qrRef} />
       ) : (

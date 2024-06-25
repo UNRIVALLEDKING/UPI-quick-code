@@ -6,8 +6,7 @@ const comfortaa = Comfortaa({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'UPI Quick Code by UNRIVALLEDKING',
-  description:
-    'Generate UPI QR codes effortlessly with UPI Quick Code by UNRIVALLLEDKING. Quickly create, validate, and download QR codes for seamless UPI payments. Perfect for businesses and individuals.',
+  description: 'random description',
 };
 
 export default function RootLayout({ children }) {
